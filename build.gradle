@@ -66,6 +66,9 @@ sourceSets {
         resources.srcDirs = ['src/test/intg/resources', 'src/test/unit/resources']
     }
 }
+task intgTest(type : Test) {
+    exclude 'com/thoughtworks/jimmy/service/**'
+}
 
 task initSourceFolders << {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
