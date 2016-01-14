@@ -1,0 +1,3 @@
+<suppressions>
+    <suppress checks="AvoidEscapedUnicodeCharacters" files="PatternUtil.java"/>
+</suppressions>
