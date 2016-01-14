@@ -20,6 +20,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
 apply plugin: 'org.flywaydb.flyway'
+apply plugin: 'checkstyle'
 
 springBoot {
     mainClass = "com.thoughtworks.jimmy.SpringBootWebApplication"
