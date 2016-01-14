@@ -81,3 +81,8 @@ flyway {
     password = 'root'
     url = 'jdbc:mysql://localhost:3306/bookshelf'
 }
+
+checkstyle {
+    toolVersion = "6.7"
+    configFile = new File(project(":").projectDir, "config/checkstyle/checkstyle.xml")
+}
