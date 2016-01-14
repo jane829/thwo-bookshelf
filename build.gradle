@@ -74,3 +74,9 @@ task initSourceFolders << {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
     sourceSets*.resources.srcDirs*.each { it.mkdirs() }
 }
+
+flyway {
+    user = 'root'
+    password = 'root'
+    url = 'jdbc:mysql://localhost:3306/bookshelf'
+}
