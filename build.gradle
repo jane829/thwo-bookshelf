@@ -20,7 +20,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
 apply plugin: 'org.flywaydb.flyway'
-apply plugin: 'checkstyle'
+//apply plugin: 'checkstyle'
 
 springBoot {
     mainClass = "com.thoughtworks.jimmy.SpringBootWebApplication"
@@ -81,8 +81,7 @@ flyway {
     password = 'root'
     url = 'jdbc:mysql://localhost:3306/bookshelf'
 }
-
-checkstyle {
-    toolVersion = "6.7"
-    configFile = new File(project(":").projectDir, "config/checkstyle/checkstyle.xml")
-}
+//checkstyle {
+//    toolVersion = "6.7"
+//    configFile = new File(project(":").projectDir, "config/checkstyle/checkstyle.xml")
+//}
