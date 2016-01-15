@@ -18,6 +18,14 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
+apply plugin: 'org.flywaydb.flyway'
+
+flyway {
+    user = 'root'
+    password = 'root'
+    url = 'jdbc:mysql://localhost:3306/bookshelf'
+}
+
 
 springBoot {
     mainClass = "com.thoughtworks.jimmy.SpringBootWebApplication"
