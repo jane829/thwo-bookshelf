@@ -78,3 +78,7 @@ task initSourceFolders << {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
     sourceSets*.resources.srcDirs*.each { it.mkdirs() }
 }
+
+task intgTest(type : Test) {
+    exclude 'com/thoughtworks/jimmy/service/**'
+}
