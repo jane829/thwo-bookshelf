@@ -38,7 +38,7 @@ window.onload = function () {
                 url: baseUrl,
                 data: JSON.stringify(book),
                 contentType: "application/json; charset=utf-8",
-                success: function () {
+                complete: function () {
                     location.href = '/index.html';
                 }
             });
